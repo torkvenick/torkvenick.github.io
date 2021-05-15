@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boekingspagina</title>
+</head>
+<style>
+  ul {
+    list-style-type: none;
+  }
+  img {
+    width: 400px;
+  }
+</style>
+
+<body>
+  <header>
+    <h2>Accomodatie boeken</h2>
+    <p>Op deze pagina kunt u een kamer in ons hotel boeken en nog een aantal foto's en een filmpje bekijken</p>
+  </header>
+  <main>
+    <form action="http://jkorpela.fi/cgi-bin/echo.cgi." method="POST" id="form">
+      <h2>Adresgegevens</h2>
+      <ul>
+        <li>
+          <label>
+            <p>Naam:<input id="naam" name="naam" required></p>
+          </label>
+        </li>
+        <li>
+          <label>
+            <p>Adres:<input id="adres" name="adres" required></p>
+          </label>
+        </li>
+        <li>
+          <label>
+            <p>Postcode:<input id="postcode" name="postcode" required placeholder="1111 AA"
+                pattern="[0-9]{4}\s[A-Z]{2}"></p>
+          </label>
+        </li>
+        <li>
+          <label>
+            <p>Woonplaats:<input id="woonplaats" name="woonplaats" required></p>
+          </label>
+        </li>
+        <li>
+          <label>
+            <p>Telefoonnr:<input type="tel" name="tel" id="tel" required pattern="+[0-9]{11}"
+                placeholder="+01234567890"></p>
+          </label>
+        </li>
+        <li>
+          <label>
+            <p>E-mailadres: <input type="email" name="email" id="email" required placeholder="example@gmail.com"></p>
+          </label>
+        </li>
+      </ul>
+    </form>
+    <section>
+      <h2>Reservering</h2>
+      <ul>
+        <li>
+          <label>
+            <p>Aantal personen:<input type="number" name="nummer" id="nummer" step="1" min="1" max="10" required></p>
+          </label>
+        </li>
+        <li>
+          <label>
+            <p>Aankomstdatum:<input type="date" name="date" id="date" required></p>
+          </label>
+        </li>
+        <li>
+          <label>
+            <p>Verblijfsduur:<input type="range" name="slider" id="slider" min="1" max="30" value="6">Aantal dagen:
+              <span class="waarde"></span>
+            </p>
+          </label>
+        </li>
+        <li>
+          <label>
+            <p>Verzorging:
+              <select name="zorg" id="zorg">
+                <option value="opt1">Logies</option>
+                <option value="opt2">Kamer</option>
+                <option value="opt3">Huis</option>
+                <option value="opt4">Garage</option>
+              </select>
+            </p>
+          </label>
+        </li>
+        <li>
+          <label>
+            <p>Annuleringsverzekering:
+              <label for="ja"></label>
+              <input type="radio" name="verzekering" id="ja">Ja
+              <label for="nee"></label>
+              <input type="radio" name="verzekering" id="nee">Nee
+            </p>
+          </label>
+        </li>
+        <li>
+          <label>
+            <p>Opmerkingen:<textarea name="opmerking" id="opmerking" cols="50" rows="10" maxlength="130"></textarea></p>
+          </label>
+        </li>
+      </ul>
+      <button type="submit" form="form">Reserveer</button>
+    </section>
+    <section>
+      <h2>Foto's</h2>
+      <figure>
+        <a href="img/img-1md.jpg">
+          <img src="img/img-1.jpg" alt="ontbijt">
+        </a>
+        <figcaption>Lopend buffet</figcaption>
+      </figure>
+      <figure>
+        <a href="img/img-2md.jpg">
+          <img src="img/img-2.jpg" alt="kamer">
+        </a>
+        <figcaption>Een van de bedden</figcaption>
+      </figure>
+      <figure>
+        <a href="img/img-3md.jpg">
+          <img src="img/img-3.jpg" alt="restaurant">
+        </a>
+        <figcaption>Een lokale eetgelegenheid</figcaption>
+      </figure>
+      <figure>
+        <a href="img/img-4md.jpg">
+          <img src="img/img-4.jpg" alt="hotel">
+        </a>
+        <figcaption>Een gang in het hotel</figcaption>
+      </figure>
+    </section>
+    <section>
+      <h2>Filmpje</h2>
+      <p>Een kort inspiratiefilmpje van de mooie omgeving</p>
+      <video controls preload="metadata" width="500" height="300" poster="img/hotel-md.jpg">
+        <source src="video/hotel.mp4" type="video/mp4">
+        <source src="video/hotel.ogg" type="video/ogg">
+      </video>
+    </section>
+  </main>
+</body>
+
+<script>
+  const slider = document.getElementById('slider');
+  const waarde = document.querySelector('.waarde');
+  slider.addEventListener("input", () => {
+    waarde.innerHTML = slider.value;
+  });
+  waarde.innerHTML = slider.value;
+</script>
+
+</html>
