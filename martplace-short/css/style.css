@@ -1,0 +1,14 @@
+/* Fonts */
+@import url('files/fonts.css');
+@import url('files/global.css');
+@import url('files/header.css');
+@import url('files/banner.css');
+@import url('files/about.css');
+@import url('files/gallery.css');
+@import url('files/products.css');
+@import url('files/footer.css');
+
+
+.main {
+  grid-area: main;
+}
