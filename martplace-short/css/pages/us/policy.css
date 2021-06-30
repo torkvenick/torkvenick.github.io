@@ -1,0 +1,70 @@
+
+.policy {
+  background-color: #fff;
+  padding: 30px 0;
+}
+
+.policy__inner {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 24px;
+  color: #333;
+  position: relative;
+}
+
+.policy__inner::after {
+  content: '';
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  right: 50%;
+  top: 0;
+  background-color: #ececec;
+}
+
+@media (max-width: 767.98px) {
+  .policy__inner::after {
+    width: 100%;
+    height: 1px;
+    right: 0;
+    left: 0;
+    top: 50%;
+    background-color: #000;
+  }
+}
+
+.policy__item {
+  min-height: 200px;
+  position: relative;
+  flex: 1 1 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+  line-height: 1.7;
+}
+
+@media (max-width: 767.98px) {
+  .policy__item {
+    flex: 1 1 100%;
+  }
+  .policy__item:first-child {
+    margin-bottom: 70px;
+  }
+}
+
+.policy__item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.policy__item:first-child::before {
+  content: url(../../../img/icons/cash-icon.png);
+}
+
+.policy__item:last-child::before {
+  content: url(../../../img/icons/user-icon.png);
+}
