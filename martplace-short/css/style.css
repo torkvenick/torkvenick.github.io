@@ -1,14 +1,15 @@
-/* Fonts */
-@import url('files/fonts.css');
-@import url('files/global.css');
-@import url('files/header.css');
-@import url('files/banner.css');
-@import url('files/about.css');
-@import url('files/gallery.css');
-@import url('files/products.css');
-@import url('files/footer.css');
+/* general styles/settings */
+@import url('fonts.css');
+@import url('global.css');
 
 
-.main {
-  grid-area: main;
-}
+/* components styles */
+@import url('components/header.css');
+@import url('components/slogan.css');
+@import url('components/footer.css');
+
+
+/* pages styles */
+@import url('pages/home/home.css');
+@import url('pages/us/us.css');
+@import url('pages/price-plan/price-plan.css');

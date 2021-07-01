@@ -1,10 +1,4 @@
-
-@import url('../../fonts.css');
-@import url('../../global.css');
-@import url('../../components/header.css');
 @import url('banner.css');
 @import url('about.css');
 @import url('gallery.css');
 @import url('products.css');
-@import url('../../components/footer.css');
-
