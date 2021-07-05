@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Store</title>
+</head>
+
+<body>
+  <!-- Wrapper -->
+  <div class="wrapper">
+    <!-- Content -->
+    <!-- Start Header -->
+    <header class="header">
+      <div class="container">
+        <!-- Navigation -->
+        <nav class="header__inner">
+          <a class="header__logo" href="#">
+            <img src="img/logo.png" alt="logo">
+          </a>
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__link" href="#">Home</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">Store</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">Why us?</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">Pricing plan</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">Contact</a>
+            </li>
+          </ul>
+          <button class='header__menu' type='button'>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class='sr-only'>Menu</span>
+          </button>
+        </nav>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Main -->
+    <main class="main">
+
+      <!-- Start intro -->
+      <section class="intro">
+        <div class="container">
+          <div class="intro__inner">
+            <h2 class="intro__title">
+              4,572
+              <span>wordpress themes, made with love</span>
+            </h2>
+
+            <!-- Start form -->
+            <div class="intro__form">
+              <form class="form intro__form-body" id="formSearch" action="https://jkorpela.fi/cgi-bin/echo.cgi"
+                method="POST">
+                <label for="formSearch">
+                  <span class="sr-only">Search</span>
+                </label>
+                <input class="form__input intro__input" type="search" id="formSearch" name="formSearch"
+                  placeholder="Search products">
+                <button class="btn form__btn intro__btn bg-blue" type="submit" form="search">
+                  <span class="form__text">Search</span>
+                  <span class="lnr lnr-magnifier form__icon"></span>
+                </button>
+              </form>
+            </div>
+            <!-- End form -->
+          </div>
+        </div>
+      </section>
+      <!-- End intro -->
+
+      <!-- Start Filters -->
+      <section class="filters">
+        <div class="container">
+          <button class="filters__btn" type="button">
+            <h3>Filters</h3>
+            <span class="lnr lnr-chevron-down filters__btn-icon"></span>
+          </button>
+          <div class="filters__inner">
+
+            <div class="filters__products">
+              <button class="filters__product" type="button">New Products</button>
+              <button class="filters__product" type="button">Popular Products</button>
+            </div>
+            <div class="filters__form">
+              <form class="form-filter" action="#" method="POST">
+                <ul class="form-filter__list">
+                  <li>
+                    <label for="sorting">
+                      <span class="sr-only">Sorting products</span>
+                    </label>
+                    <select class="form-filter__select" name="sorting" id="sorting">
+                      <option value="low-to-high">Price: Low to High</option>
+                      <option value="high-to-low">Price: High to Low</option>
+                      <option value="newest">Newest first</option>
+                      <option value="oldest">Oldest first</option>
+                      <option value="best-rating">Best Rating</option>
+                      <option value="best-seller">Best Seller</option>
+                    </select>
+                  </li>
+                  <li>
+                    <label for="viewPerPage">
+                      <span class="sr-only">View per page</span>
+                    </label>
+                    <select class="form-filter__select" name="viewPerPage" id="viewPerPage">
+                      <option value="12items">12 Items Per Page</option>
+                      <option value="24items">24 Items Per Page</option>
+                      <option value="36items">36 Items Per Page</option>
+                      <option value="72items">72 Items Per Page</option>
+                    </select>
+                  </li>
+                </ul>
+              </form>
+            </div>
+            <div class="filters__view">
+              <button class="filters__icon filters__icon--grid" type="button"></button>
+              <button class="filters__icon filters__icon--list" type="button"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- End Filters -->
+
+      <!-- Start content -->
+      <div class="content">
+        <!-- Start Aside -->
+        <aside class="aside">
+          <ul class="aside__inner">
+            <li class="category aside__filter">
+              <button class="aside__btn" type="button">
+                <h3>Categories</h3>
+                <span class="lnr lnr-chevron-down aside__icon"></span>
+              </button>
+              <ul class="aside__list category__list">
+                <li class="category__item">
+                  <button class="category__btn aside__list-btn" type="button" data-filter=".category-wp">
+                    Wordpress
+                  </button>
+                  <span class="category__qty">35</span>
+                </li>
+                <li class="category__item">
+                  <button class="category__btn aside__list-btn" type="button" data-filter=".category-landing">
+                    Landing Page
+                  </button>
+                  <span class="category__qty">45</span>
+                </li>
+                <li class="category__item">
+                  <button class="category__btn aside__list-btn" type="button" data-filter=".category-psd">
+                    PSD Template
+                  </button>
+                  <span class="category__qty">13</span>
+                </li>
+                <li class="category__item">
+                  <button class="category__btn aside__list-btn" type="button" data-filter=".category-plugin">
+                    Plugins
+                  </button>
+                  <span class="category__qty">08</span>
+                </li>
+                <li class="category__item">
+                  <button class="category__btn aside__list-btn" type="button" data-filter=".category-html">
+                    HTML Template
+                  </button>
+                  <span class="category__qty">34</span>
+                </li>
+                <li class="category__item">
+                  <button class="category__btn aside__list-btn" type="button" data-filter=".category-component">
+                    Components
+                  </button>
+                  <span class="category__qty">78</span>
+                </li>
+                <li class="category__item">
+                  <button class="category__btn aside__list-btn" type="button" data-filter=".category-joomla">
+                    Joomla Template
+                  </button>
+                  <span class="category__qty">26</span>
+                </li>
+                <li class="category__item">
+                  <button class="category__btn aside__list-btn" type="button" data-filter="all">
+                    All
+                  </button>
+                  <span class="category__qty">100+</span>
+                </li>
+              </ul>
+            </li>
+
+            <li class="sort aside__filter">
+              <button class="aside__btn" type="button">
+                <h3>Filter Products</h3>
+                <span class="lnr lnr-chevron-down aside__icon"></span>
+              </button>
+              <ul class="sort__list aside__list">
+                <li class="sort__item">
+                  <button class="sort__btn aside__list-btn" type="button">
+                    Trending Products
+                  </button>
+                </li>
+                <li class="sort__item">
+                  <button class="sort__btn aside__list-btn" type="button">
+                    Popular Products
+                  </button>
+                </li>
+                <li class="sort__item">
+                  <button class="sort__btn aside__list-btn" type="button">
+                    New Products
+                  </button>
+                </li>
+                <li class="sort__item">
+                  <button class="sort__btn aside__list-btn" type="button">
+                    Best Seller
+                  </button>
+                </li>
+                <li class="sort__item">
+                  <button class="sort__btn aside__list-btn" type="button">
+                    Best Rating
+                  </button>
+                </li>
+                <li class="sort__item">
+                  <button class="sort__btn aside__list-btn" type="button">
+                    Low Price
+                  </button>
+                </li>
+                <li class="sort__item">
+                  <button class="sort__btn aside__list-btn" type="button" type="button">
+                    High Price
+                  </button>
+                </li>
+              </ul>
+            </li>
+
+            <li class="range aside__filter">
+              <button class="aside__btn" type="button">
+                <h3>Pricing Range</h3>
+                <span class="lnr lnr-chevron-down aside__icon"></span>
+              </button>
+              <form class="range__form" action="#">
+                <label for="pricingRange">
+                  <span class="sr-only">Pricing Range</span></label>
+                <input class="range__input" id="pricingRange" type="range" min="0" max="400">
+                <button class="range__btn btn bg-blue" type="submit">Search Update</button>
+              </form>
+            </li>
+          </ul>
+        </aside>
+        <!-- End Aside -->
+
+        <!-- Start Cards -->
+        <section class="cards">
+          <ul class="cards__list">
+
+            <li class="cards__item mix category-psd" data-order="1">
+              <a class="cards__link" href="#">
+                <img class="cards__img" src="img/content/gallery-1.jpg" alt="card">
+              </a>
+              <div class="cards__inner">
+                <h3 class="cards__title">
+                  Finance and Consulting Business themes
+                </h3>
+                <a class="cards__author" href="#">
+                  <img class="cards__avatar" src="img/content/avatar.jpg" alt="author">
+                  Artcorner
+                </a>
+                <div class="cards__info">
+                  <div class="cards__rate" style="background-image: url(img/icons/star.png);"></div>
+                  <button class="cards__cart" type="button">
+                    <span class="lnr lnr-cart"></span>
+                    365
+                  </button>
+                </div>
+                <div class="cards__bottom">
+                  <p class="cards__price">
+                    <span>$</span>28
+                  </p>
+                  <a class="cards__item-type" href="#" style="background-image:url(img/icons/ps.svg)">
+                    PSD
+                  </a>
+                </div>
+            </li>
+
+            <li class="cards__item mix category-html" data-order="2">
+              <a class="cards__link" href="#">
+                <img class="cards__img" src="img/content/gallery-2.jpg" alt="card">
+              </a>
+              <div class="cards__inner">
+                <h3 class="cards__title">
+                  Bryson - Portfolio Template
+                </h3>
+                <a class="cards__author" href="#">
+                  <img class="cards__avatar" src="img/content/avatar.jpg" alt="author">
+                  Theme-Valley
+                </a>
+                <div class="cards__info">
+                  <div class="cards__rate" style="background-image: url(img/icons/star.png);"></div>
+                  <button class="cards__cart" type="button">
+                    <span class="lnr lnr-cart"></span>
+                    202
+                  </button>
+                </div>
+                <div class="cards__bottom">
+                  <p class="cards__price">
+                    <span>$</span>40
+                  </p>
+                  <a class="cards__item-type" href="#" style="background-image:url(img/icons/html.png)">
+                    HTML
+                  </a>
+                </div>
+            </li>
+
+            <li class="cards__item mix category-wp" data-order="3">
+              <a class="cards__link" href="#">
+                <img class="cards__img" src="img/content/gallery-3.png" alt="card">
+              </a>
+              <div class="cards__inner">
+                <h3 class="cards__title">
+                  E-commerce Shopping Cart
+                </h3>
+                <a class="cards__author" href="#">
+                  <img class="cards__avatar" src="img/content/avatar.jpg" alt="author">
+                  EcoTheme
+                </a>
+                <div class="cards__info">
+                  <div class="cards__rate" style="background-image: url(img/icons/star.png);"></div>
+                  <button class="cards__cart" type="button">
+                    <span class="lnr lnr-cart"></span>
+                    513
+                  </button>
+                </div>
+                <div class="cards__bottom">
+                  <p class="cards__price">
+                    <span>$</span>36
+                  </p>
+                  <a class="cards__item-type" href="#" style="background-image:url(img/icons/wp.svg)">
+                    WP
+                  </a>
+                </div>
+            </li>
+
+            <li class="cards__item mix category-psd" data-order="4">
+              <a class="cards__link" href="#">
+                <img class="cards__img" src="img/content/gallery-1.jpg" alt="card">
+              </a>
+              <div class="cards__inner">
+                <h3 class="cards__title">
+                  Finance and Consulting Business themes
+                </h3>
+                <a class="cards__author" href="#">
+                  <img class="cards__avatar" src="img/content/avatar.jpg" alt="author">
+                  Artcorner
+                </a>
+                <div class="cards__info">
+                  <div class="cards__rate" style="background-image: url(img/icons/star.png);"></div>
+                  <button class="cards__cart" type="button">
+                    <span class="lnr lnr-cart"></span>
+                    365
+                  </button>
+                </div>
+                <div class="cards__bottom">
+                  <p class="cards__price">
+                    <span>$</span>28
+                  </p>
+                  <a class="cards__item-type" href="#" style="background-image:url(img/icons/ps.svg)">
+                    PSD
+                  </a>
+                </div>
+            </li>
+
+            <li class="cards__item mix category-html" data-order="5">
+              <a class="cards__link" href="#">
+                <img class="cards__img" src="img/content/gallery-2.jpg" alt="card">
+              </a>
+              <div class="cards__inner">
+                <h3 class="cards__title">
+                  Bryson - Portfolio Template
+                </h3>
+                <a class="cards__author" href="#">
+                  <img class="cards__avatar" src="img/content/avatar.jpg" alt="author">
+                  Theme-Valley
+                </a>
+                <div class="cards__info">
+                  <div class="cards__rate" style="background-image: url(img/icons/star.png);"></div>
+                  <button class="cards__cart" type="button">
+                    <span class="lnr lnr-cart"></span>
+                    202
+                  </button>
+                </div>
+                <div class="cards__bottom">
+                  <p class="cards__price">
+                    <span>$</span>40
+                  </p>
+                  <a class="cards__item-type" href="#" style="background-image:url(img/icons/html.png)">
+                    HTML
+                  </a>
+                </div>
+            </li>
+
+            <li class="cards__item mix category-wp" data-order="6">
+              <a class="cards__link" href="#">
+                <img class="cards__img" src="img/content/gallery-3.png" alt="card">
+              </a>
+              <div class="cards__inner">
+                <h3 class="cards__title">
+                  E-commerce Shopping Cart
+                </h3>
+                <a class="cards__author" href="#">
+                  <img class="cards__avatar" src="img/content/avatar.jpg" alt="author">
+                  EcoTheme
+                </a>
+                <div class="cards__info">
+                  <div class="cards__rate" style="background-image: url(img/icons/star.png);"></div>
+                  <button class="cards__cart" type="button">
+                    <span class="lnr lnr-cart"></span>
+                    513
+                  </button>
+                </div>
+                <div class="cards__bottom">
+                  <p class="cards__price">
+                    <span>$</span>36
+                  </p>
+                  <a class="cards__item-type" href="#" style="background-image:url(img/icons/wp.svg)">
+                    WP
+                  </a>
+                </div>
+            </li>
+
+            <li class="cards__item mix category-psd" data-order="7">
+              <a class="cards__link" href="#">
+                <img class="cards__img" src="img/content/gallery-1.jpg" alt="card">
+              </a>
+              <div class="cards__inner">
+                <h3 class="cards__title">
+                  Finance and Consulting Business themes
+                </h3>
+                <a class="cards__author" href="#">
+                  <img class="cards__avatar" src="img/content/avatar.jpg" alt="author">
+                  Artcorner
+                </a>
+                <div class="cards__info">
+                  <div class="cards__rate" style="background-image: url(img/icons/star.png);"></div>
+                  <button class="cards__cart" type="button">
+                    <span class="lnr lnr-cart"></span>
+                    365
+                  </button>
+                </div>
+                <div class="cards__bottom">
+                  <p class="cards__price">
+                    <span>$</span>28
+                  </p>
+                  <a class="cards__item-type" href="#" style="background-image:url(img/icons/ps.svg)">
+                    PSD
+                  </a>
+                </div>
+            </li>
+
+            <li class="cards__item mix category-html" data-order="8">
+              <a class="cards__link" href="#">
+                <img class="cards__img" src="img/content/gallery-2.jpg" alt="card">
+              </a>
+              <div class="cards__inner">
+                <h3 class="cards__title">
+                  Bryson - Portfolio Template
+                </h3>
+                <a class="cards__author" href="#">
+                  <img class="cards__avatar" src="img/content/avatar.jpg" alt="author">
+                  Theme-Valley
+                </a>
+                <div class="cards__info">
+                  <div class="cards__rate" style="background-image: url(img/icons/star.png);"></div>
+                  <button class="cards__cart" type="button">
+                    <span class="lnr lnr-cart"></span>
+                    202
+                  </button>
+                </div>
+                <div class="cards__bottom">
+                  <p class="cards__price">
+                    <span>$</span>40
+                  </p>
+                  <a class="cards__item-type" href="#" style="background-image:url(img/icons/html.png)">
+                    HTML
+                  </a>
+                </div>
+            </li>
+
+            <li class="cards__item mix category-wp" data-order="9">
+              <a class="cards__link" href="#">
+                <img class="cards__img" src="img/content/gallery-3.png" alt="card">
+              </a>
+              <div class="cards__inner">
+                <h3 class="cards__title">
+                  E-commerce Shopping Cart
+                </h3>
+                <a class="cards__author" href="#">
+                  <img class="cards__avatar" src="img/content/avatar.jpg" alt="author">
+                  EcoTheme
+                </a>
+                <div class="cards__info">
+                  <div class="cards__rate" style="background-image: url(img/icons/star.png);"></div>
+                  <button class="cards__cart" type="button">
+                    <span class="lnr lnr-cart"></span>
+                    513
+                  </button>
+                </div>
+                <div class="cards__bottom">
+                  <p class="cards__price">
+                    <span>$</span>36
+                  </p>
+                  <a class="cards__item-type" href="#" style="background-image:url(img/icons/wp.svg)">
+                    WP
+                  </a>
+                </div>
+            </li>
+
+            <li class="cards__item mix category-psd" data-order="10">
+              <a class="cards__link" href="#">
+                <img class="cards__img" src="img/content/gallery-1.jpg" alt="card">
+              </a>
+              <div class="cards__inner">
+                <h3 class="cards__title">
+                  Finance and Consulting Business themes
+                </h3>
+                <a class="cards__author" href="#">
+                  <img class="cards__avatar" src="img/content/avatar.jpg" alt="author">
+                  Artcorner
+                </a>
+                <div class="cards__info">
+                  <div class="cards__rate" style="background-image: url(img/icons/star.png);"></div>
+                  <button class="cards__cart" type="button">
+                    <span class="lnr lnr-cart"></span>
+                    365
+                  </button>
+                </div>
+                <div class="cards__bottom">
+                  <p class="cards__price">
+                    <span>$</span>28
+                  </p>
+                  <a class="cards__item-type" href="#" style="background-image:url(img/icons/ps.svg)">
+                    PSD
+                  </a>
+                </div>
+            </li>
+
+            <li class="cards__item mix category-html" data-order="11">
+              <a class="cards__link" href="#">
+                <img class="cards__img" src="img/content/gallery-2.jpg" alt="card">
+              </a>
+              <div class="cards__inner">
+                <h3 class="cards__title">
+                  Bryson - Portfolio Template
+                </h3>
+                <a class="cards__author" href="#">
+                  <img class="cards__avatar" src="img/content/avatar.jpg" alt="author">
+                  Theme-Valley
+                </a>
+                <div class="cards__info">
+                  <div class="cards__rate" style="background-image: url(img/icons/star.png);"></div>
+                  <button class="cards__cart" type="button">
+                    <span class="lnr lnr-cart"></span>
+                    202
+                  </button>
+                </div>
+                <div class="cards__bottom">
+                  <p class="cards__price">
+                    <span>$</span>40
+                  </p>
+                  <a class="cards__item-type" href="#" style="background-image:url(img/icons/html.png)">
+                    HTML
+                  </a>
+                </div>
+            </li>
+
+            <li class="cards__item mix category-wp" data-order="12">
+              <a class="cards__link" href="#">
+                <img class="cards__img" src="img/content/gallery-3.png" alt="card">
+              </a>
+              <div class="cards__inner">
+                <h3 class="cards__title">
+                  E-commerce Shopping Cart
+                </h3>
+                <a class="cards__author" href="#">
+                  <img class="cards__avatar" src="img/content/avatar.jpg" alt="author">
+                  EcoTheme
+                </a>
+                <div class="cards__info">
+                  <div class="cards__rate" style="background-image: url(img/icons/star.png);"></div>
+                  <button class="cards__cart" type="button">
+                    <span class="lnr lnr-cart"></span>
+                    513
+                  </button>
+                </div>
+                <div class="cards__bottom">
+                  <p class="cards__price">
+                    <span>$</span>36
+                  </p>
+                  <a class="cards__item-type" href="#" style="background-image:url(img/icons/wp.svg)">
+                    WP
+                  </a>
+                </div>
+            </li>
+
+          </ul>
+        </section>
+        <!-- End Cards -->
+      </div>
+      <!-- End content -->
+
+      <!-- Start Join -->
+      <section class="join">
+        <div class="container">
+          <div class="join__inner">
+            <h2 class="join__title">
+              Ready to Join Our Marketplace!
+              <span class="join__subtitle">
+                Over 25,000 designers and developers trust the MartPlace.
+              </span>
+            </h2>
+
+            <a class="join__link" href="#">
+              Join Us Today
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- End Join -->
+
+    </main>
+    <!-- End Main -->
+
+    <!-- Start footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+
+          <button class="footer__btn" type="button">
+            <span>Contacts</span>
+            <span class="lnr lnr-arrow-down"></span>
+          </button>
+          <div class="footer__item footer__item--contacts">
+            <a class="footer__logo" href="#">
+              <img class="logo__img" src="img/logo-white.png" alt="logo">
+            </a>
+            <p class="footer__text">
+              Nunc placerat mi id nisi interdum they mollis. Praesent pharetra, justo ut scel erisque the mattis,
+              leo quam.
+            </p>
+
+            <address class="footer__address">
+              <a class="footer__link" href="tel:+67898752235">
+                <span class="lnr lnr-phone-handset footer__icon"></span>
+                Phone: +6789-875-2235
+              </a>
+              <a class="footer__link" href="mailto:support@aazztech.com">
+                <span class="lnr lnr-envelope footer__icon"></span>
+                support@aazztech.com
+              </a>
+              <a class="footer__link" href="#">
+                <span class="lnr lnr-map-marker footer__icon"></span>
+                202 New Hampshire Avenue
+                Northwest #100, New York-2573
+              </a>
+            </address>
+          </div>
+
+          <button class="footer__btn" type="button">
+            <span>Our company</span>
+            <span class="lnr lnr-arrow-down"></span>
+          </button>
+          <div class="footer__item footer__item--about">
+            <div class="footer__title">
+              Our Company
+            </div>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">
+                  About us
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">
+                  How It Works
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">
+                  Affiliates
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">
+                  Testimonials
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">
+                  Contact Us
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">
+                  Copyright Notice
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">
+                  Blog
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <button class="footer__btn" type="button">
+            <span>Help Support</span>
+            <span class="lnr lnr-arrow-down"></span>
+          </button>
+          <div class="footer__item footer__item--support">
+            <div class="footer__title">
+              Help Support
+            </div>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">
+                  Support Forum
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">
+                  Terms & Conditions
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">
+                  Support Policy
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">
+                  Refund Policy
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">
+                  FAQs
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">
+                  Buyers Faq
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">
+                  Sellers Faq
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <button class="footer__btn" type="button">
+            <span>Newsletter</span>
+            <span class="lnr lnr-arrow-down"></span>
+          </button>
+          <div class="footer__item footer__item--newsletter">
+            <div class="footer__title">
+              Newsletter
+            </div>
+            <p class="footer__text">
+              Subscribe to get the latest news, update and offer policyrmation. Don't worry, we won't send spam!
+            </p>
+
+            <!-- Start form -->
+            <div class="footer__form">
+              <form class="form" id="email" action="https://jkorpela.fi/cgi-bin/echo.cgi " method="POST">
+                <label for="formEmail">
+                  <span class="sr-only">Submit</span>
+                </label>
+                <input class="form__input" type="email" id="formEmail" name="formEmail" placeholder="Enter email">
+                <button class="btn form__btn bg-blue" type="submit" form="email">
+                  Submit
+                </button>
+              </form>
+            </div>
+            <!-- End form -->
+            <ul class="social">
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img src="img/social/fb.png" alt="facebook">
+                  facebook
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img src="img/social/twit.png" alt="twitter">
+                  twitter
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img src="img/social/google.png" alt="google">
+                  google
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img src="img/social/pinterest.png" alt="pinterest">
+                  pinterest
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img src="img/social/linked.png" alt="linked">
+                  linkedin
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img src="img/social/dribbble.png" alt="dribbble">
+                  dribbble
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+      <div class="footer__bottom">
+        ©2017
+        <a class="footer__bottom-link" href="#">
+          MartPlace.
+        </a>
+        All rights reserved. Created by
+        <a class="footer__bottom-link" href="#">
+          AazzTech
+        </a>
+      </div>
+    </footer>
+    <!-- End footer -->
+
+  </div>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="js/magnific-popup.js"></script>
+  <script src="js/mixitup.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -8,7 +8,7 @@ if (iconMenu) {
   });
 }
 
-
+//-----------------------------------------------------------------------
 
 //Magnific popup for the video and gallery
 $('.gallery__link').magnificPopup({
@@ -24,7 +24,6 @@ $('.gallery__link').magnificPopup({
 
     duration: 300, // duration of the effect, in milliseconds
     easing: 'ease-in-out', // CSS transition easing function
-
     // The "opener" function should return the element from which popup will be zoomed in
     // and to which popup will be scaled down
     // By defailt it looks for an image tag:
@@ -36,16 +35,54 @@ $('.gallery__link').magnificPopup({
   }
 });
 
+//-----------------------------------------------------------------------
 
+const filterList = document.querySelector('.filters__inner');
+const filterBtn = document.querySelector('.filters__btn');
+if (filterBtn) {
+  filterBtn.addEventListener("click", function (e) {
+    filterList.classList.toggle('filters__inner--active');
+  });
+}
 
+//-----------------------------------------------------------------------
 
-//Footer menu
-const headers = document.querySelectorAll(".footer__btn");
+//aside filters scroll
+const asideFilter = document.querySelectorAll(".aside__btn"); //в скобках указываем элемент
+asideFilter.forEach(function (item) {
+  item.addEventListener("click", click);
+});
+function click() {
+  this.nextElementSibling.classList.toggle("_active"); //не ставим точку для класса
+} 
 
-headers.forEach(function (item) {
-  item.addEventListener("click", headerClick);
+//-----------------------------------------------------------------------
+
+// footerMenu scroll
+const footerMenu = document.querySelectorAll(".footer__btn"); //в скобках указываем элемент
+footerMenu.forEach(function (item) {
+  item.addEventListener("click", click);
+});
+function click() {
+  this.nextElementSibling.classList.toggle("_active"); //не ставим точку для класса
+} 
+
+//-----------------------------------------------------------------------
+
+//Grid and list view
+$('.filters__icon--grid').on('click', function(){
+  $(this).addClass('filters__icon--active');
+  $('.filters__icon--list').removeClass('filters__icon--active');
+  $('.cards__item').removeClass('cards__item--list');
 });
 
-function headerClick() {
-  this.nextElementSibling.classList.toggle("_active");
-}
+$('.filters__icon--list').on('click', function(){
+  $(this).addClass('filters__icon--active');
+  $('.filters__icon--grid').removeClass('filters__icon--active');
+  $('.cards__item').addClass('cards__item--list');
+});
+
+//-----------------------------------------------------------------------
+
+//mixitup for store-page
+var mixer = mixitup('.cards__list');

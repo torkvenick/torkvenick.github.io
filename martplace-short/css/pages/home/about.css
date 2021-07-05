@@ -1,4 +1,7 @@
 /* Start About */
+.about {
+  background-color: #fff;
+}
 
 .about__inner {
   display: flex;

@@ -273,9 +273,11 @@
 }
 
 .form__btn {
-  padding: 14px 27px;
+  padding: 0 27px;
   position: absolute;
   right: 0;
+  top: 0;
+  bottom: 0;
 }
 
 .form__btn:hover {
