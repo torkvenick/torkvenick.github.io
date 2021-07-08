@@ -25,19 +25,19 @@
           </a>
           <ul class="header__list">
             <li class="header__item">
-              <a class="header__link" href="#">Home</a>
+              <a class="header__link" href="home.html">Home</a>
             </li>
             <li class="header__item">
               <a class="header__link" href="#">Store</a>
             </li>
             <li class="header__item">
-              <a class="header__link" href="#">Why us?</a>
+              <a class="header__link" href="us.html">Why us?</a>
             </li>
             <li class="header__item">
-              <a class="header__link" href="#">Pricing plan</a>
+              <a class="header__link" href="price-plan.html">Pricing plan</a>
             </li>
             <li class="header__item">
-              <a class="header__link" href="#">Contact</a>
+              <a class="header__link" href="contact.html">Contact</a>
             </li>
           </ul>
           <button class='header__menu' type='button'>
@@ -65,14 +65,14 @@
 
             <!-- Start form -->
             <div class="intro__form">
-              <form class="form intro__form-body" id="formSearch" action="https://jkorpela.fi/cgi-bin/echo.cgi"
+              <form class="form intro__form-body" id="searchProduct" action="https://jkorpela.fi/cgi-bin/echo.cgi"
                 method="POST">
                 <label for="formSearch">
                   <span class="sr-only">Search</span>
                 </label>
                 <input class="form__input intro__input" type="search" id="formSearch" name="formSearch"
                   placeholder="Search products">
-                <button class="btn form__btn intro__btn bg-blue" type="submit" form="search">
+                <button class="btn form__btn intro__btn bg-blue" type="submit" form="searchProduct">
                   <span class="form__text">Search</span>
                   <span class="lnr lnr-magnifier form__icon"></span>
                 </button>
@@ -87,8 +87,9 @@
       <!-- Start Filters -->
       <section class="filters">
         <div class="container">
+          <h2 class="sr-only">Filters</h2>
           <button class="filters__btn" type="button">
-            <h3>Filters</h3>
+            <span class="filters__title">Filters</span>
             <span class="lnr lnr-chevron-down filters__btn-icon"></span>
           </button>
           <div class="filters__inner">
@@ -144,7 +145,7 @@
           <ul class="aside__inner">
             <li class="category aside__filter">
               <button class="aside__btn" type="button">
-                <h3>Categories</h3>
+                <span class="aside__title">Categories</span>
                 <span class="lnr lnr-chevron-down aside__icon"></span>
               </button>
               <ul class="aside__list category__list">
@@ -201,7 +202,7 @@
 
             <li class="sort aside__filter">
               <button class="aside__btn" type="button">
-                <h3>Filter Products</h3>
+                <span class="aside__title">Filter Products</span>
                 <span class="lnr lnr-chevron-down aside__icon"></span>
               </button>
               <ul class="sort__list aside__list">
@@ -236,24 +237,11 @@
                   </button>
                 </li>
                 <li class="sort__item">
-                  <button class="sort__btn aside__list-btn" type="button" type="button">
+                  <button class="sort__btn aside__list-btn" type="button">
                     High Price
                   </button>
                 </li>
               </ul>
-            </li>
-
-            <li class="range aside__filter">
-              <button class="aside__btn" type="button">
-                <h3>Pricing Range</h3>
-                <span class="lnr lnr-chevron-down aside__icon"></span>
-              </button>
-              <form class="range__form" action="#">
-                <label for="pricingRange">
-                  <span class="sr-only">Pricing Range</span></label>
-                <input class="range__input" id="pricingRange" type="range" min="0" max="400">
-                <button class="range__btn btn bg-blue" type="submit">Search Update</button>
-              </form>
             </li>
           </ul>
         </aside>
@@ -290,6 +278,7 @@
                     PSD
                   </a>
                 </div>
+              </div>
             </li>
 
             <li class="cards__item mix category-html" data-order="2">
@@ -319,6 +308,7 @@
                     HTML
                   </a>
                 </div>
+              </div>
             </li>
 
             <li class="cards__item mix category-wp" data-order="3">
@@ -348,6 +338,7 @@
                     WP
                   </a>
                 </div>
+              </div>
             </li>
 
             <li class="cards__item mix category-psd" data-order="4">
@@ -377,6 +368,7 @@
                     PSD
                   </a>
                 </div>
+              </div>
             </li>
 
             <li class="cards__item mix category-html" data-order="5">
@@ -406,6 +398,7 @@
                     HTML
                   </a>
                 </div>
+              </div>
             </li>
 
             <li class="cards__item mix category-wp" data-order="6">
@@ -435,6 +428,7 @@
                     WP
                   </a>
                 </div>
+              </div>
             </li>
 
             <li class="cards__item mix category-psd" data-order="7">
@@ -464,6 +458,7 @@
                     PSD
                   </a>
                 </div>
+              </div>
             </li>
 
             <li class="cards__item mix category-html" data-order="8">
@@ -493,6 +488,7 @@
                     HTML
                   </a>
                 </div>
+              </div>
             </li>
 
             <li class="cards__item mix category-wp" data-order="9">
@@ -522,6 +518,7 @@
                     WP
                   </a>
                 </div>
+              </div>
             </li>
 
             <li class="cards__item mix category-psd" data-order="10">
@@ -551,6 +548,7 @@
                     PSD
                   </a>
                 </div>
+              </div>
             </li>
 
             <li class="cards__item mix category-html" data-order="11">
@@ -580,6 +578,7 @@
                     HTML
                   </a>
                 </div>
+              </div>
             </li>
 
             <li class="cards__item mix category-wp" data-order="12">
@@ -609,6 +608,7 @@
                     WP
                   </a>
                 </div>
+              </div>
             </li>
 
           </ul>
@@ -783,7 +783,7 @@
 
             <!-- Start form -->
             <div class="footer__form">
-              <form class="form" id="email" action="https://jkorpela.fi/cgi-bin/echo.cgi " method="POST">
+              <form class="form" id="email" action="https://jkorpela.fi/cgi-bin/echo.cgi" method="POST">
                 <label for="formEmail">
                   <span class="sr-only">Submit</span>
                 </label>

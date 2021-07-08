@@ -6,13 +6,20 @@
 }
 
 .plan__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 @media (max-width: 1023.98px) {
   .plan__inner {
     margin: 0 -15px;
+
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
 }
@@ -20,9 +27,22 @@
 .plan__item {
   margin: 0 15px 30px;
   padding: 30px;
+
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 calc((1200 / 3 - 30) / 1200 * 100%);
   flex: 1 1 calc((1200 / 3 - 30) / 1200 * 100%);
+
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 
   text-align: center;
@@ -35,18 +55,24 @@
 
 @media (max-width: 1023.98px) {
   .plan__item {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 45%;
     flex: 0 1 45%;
   }
 }
 
 @media (max-width: 687.98px) {
   .plan__item {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 80%;
     flex: 0 1 80%;
   }
 }
 
 @media (max-width: 479.98px) {
   .plan__item {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
     flex-grow: 1;
   }
 }
@@ -75,7 +101,7 @@
 
 .plan__item ul {
   margin-bottom: 30px;
-  list-style:inside;
+  list-style: inside;
   text-align: left;
 }
 
@@ -91,7 +117,6 @@
   }
 }
 
-
 .plan__offer>span {
   color: #000;
 }
@@ -102,16 +127,22 @@
 
   border-radius: 4px;
   background-color: #0674ed;
-  
+
   text-align: center;
   color: #fff;
-  
+
   outline: transparent;
   cursor: pointer;
+
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
 
 .plan__btn:focus {
+
+  -webkit-transform: translateY(7px);
+  -ms-transform: translateY(7px);
   transform: translateY(7px);
 }
 
@@ -121,7 +152,7 @@
 
 .plan__btn:active {
   -webkit-box-shadow: 0px 2px 10px 1px #000;
-  box-shadow: 0px 2px 10px 1px #000; 
+  box-shadow: 0px 2px 10px 1px #000;
 }
 
 .plan__btn--red {

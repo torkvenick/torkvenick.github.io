@@ -45,7 +45,9 @@
 }
 
 .form__text {
-  transition: font-size 0.3s ease 0s;
+  -webkit-transition: font-size .3s ease 0s;
+  -o-transition: font-size .3s ease 0s;
+  transition: font-size .3s ease 0s;
 }
 
 @media (max-width: 767.98px) {
@@ -55,7 +57,9 @@
 }
 
 .form__icon {
-  transition: font-size 0.3s ease 0s;
+  -webkit-transition: font-size .3s ease 0s;
+  -o-transition: font-size .3s ease 0s;
+  transition: font-size .3s ease 0s;
 }
 
 @media (min-width: 768px) {

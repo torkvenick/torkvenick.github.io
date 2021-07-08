@@ -1,12 +1,16 @@
-
 .policy {
   background-color: #fff;
   padding: 30px 0;
 }
 
 .policy__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+
   font-size: 24px;
   color: #333;
   position: relative;
@@ -36,18 +40,34 @@
 .policy__item {
   min-height: 200px;
   position: relative;
+
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 50%;
   flex: 1 1 50%;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+
+  -webkit-box-align: end;
+  -ms-flex-align: end;
   align-items: flex-end;
+
   text-align: center;
   line-height: 1.7;
 }
 
 @media (max-width: 767.98px) {
   .policy__item {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 100%;
     flex: 1 1 100%;
   }
+
   .policy__item:first-child {
     margin-bottom: 70px;
   }
@@ -58,6 +78,8 @@
   position: absolute;
   top: 0;
   left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
