@@ -1,14 +1,14 @@
-import { MainService } from "./../../shared/services/main.service";
-import { Breed, Breeds } from "./../../shared/services/breeds";
-import { Component, ViewChild } from "@angular/core";
+import { MainService } from './../../shared/services/main.service';
+import { Breed, Breeds } from './../../shared/services/breeds';
+import { Component, ViewChild } from '@angular/core';
 
 @Component({
-  selector: "app-choose",
-  templateUrl: "./choose.component.html",
-  styleUrls: ["./choose.component.scss"],
+  selector: 'app-choose',
+  templateUrl: './choose.component.html',
+  styleUrls: ['./choose.component.scss'],
 })
 export class ChooseComponent {
-  @ViewChild("buttons", { static: true }) buttons;
+  @ViewChild('buttons', { static: true }) buttons: any;
   breeds = this.mainService.breeds;
   breed: Breed;
   // getDogImg() {
@@ -24,25 +24,24 @@ export class ChooseComponent {
     this.breed = this.mainService.randomizer(this.breeds);
   }
 
-  chooseDog(dog: string, event: PointerEvent & { target: HTMLElement }) {
+  chooseDog(dog: string, event: any & { target: HTMLElement }) {
     this.breed.isChosen = true;
     const chosenBreed = this.breeds.find((breed) => breed.isChosen);
     this.buttonStyleToggle(true);
     if (dog !== this.breed.dog) {
-      event.target.style.backgroundColor = "red";
+      event.target.style.backgroundColor = 'red';
     }
 
     setTimeout(() => {
       this.buttonStyleToggle(false);
-      this.breeds.splice(this.breeds.indexOf(chosenBreed), 1);
+      this.breeds.splice(this.breeds.indexOf(chosenBreed as Breed), 1);
       this.breed = this.mainService.randomizer(this.breeds);
     }, 2000);
   }
 
   buttonStyleToggle(chosen: boolean) {
-    const rightDog = this.breed.dogs.indexOf(this.breed.dog, 0);
-    return (this.buttons.el.children[rightDog].style.backgroundColor = chosen
-      ? "green"
-      : "transparent");
+    const rightDog = this.breed?.dogs?.indexOf(this.breed.dog, 0);
+    return (this.buttons.el.children[rightDog as number].style.backgroundColor =
+      chosen ? 'green' : 'transparent');
   }
 }
