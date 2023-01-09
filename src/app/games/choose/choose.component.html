@@ -1,20 +1,18 @@
-<ion-content class="ion-padding">
-  <ion-card color="light" class="card">
-    <div class="img-container">
-      <ion-slides pager="true" [options]="slideOpts" style="height: 100%;">
+  <ion-card color="light">
+      <div class="img-container row">
+        <ion-slides pager="true" [options]="slideOpts">
         <ion-slide *ngFor="let img of breed.imgs">
-          <ion-img class="img" [src]="img"></ion-img>
+          <ion-img [src]="img"></ion-img>
         </ion-slide>
       </ion-slides>
     </div>
-    <ion-card-content class="prl5">
-      <ion-buttons class="flx-col-between" #buttons>
-        <ng-container *ngFor="let dog of breed.dogs">
-          <ion-button fill="outline" style="margin-bottom: 10px; width: 100%;" (click)="chooseDog(dog, $event)">
-            {{dog}}
-          </ion-button>
-        </ng-container>
-      </ion-buttons>
-    </ion-card-content>
+      <ion-card-content>
+        <ion-buttons class="flx-col-between row" #buttons>
+          <ng-container *ngFor="let dog of breed.dogs">
+            <ion-button fill="outline" (click)="chooseDog(dog, $event)">
+              {{dog}}
+            </ion-button>
+          </ng-container>
+        </ion-buttons>
+      </ion-card-content>
   </ion-card>
-</ion-content>

@@ -8,19 +8,18 @@ import { RouterTestingModule } from '@angular/router/testing';
 
 import { AppComponent } from './app.component';
 import { IonicModule } from '@ionic/angular';
-import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [
-  { path: '', redirectTo: 'choosegame', pathMatch: 'full' },
-  {
-    path: 'choosegame',
-    component: ChooseComponent,
-  },
-  {
-    path: 'typegame',
-    component: TypeComponent,
-  },
-];
+// const routes: Routes = [
+//   { path: '', redirectTo: 'choosegame', pathMatch: 'full' },
+//   {
+//     path: 'choosegame',
+//     component: ChooseComponent,
+//   },
+//   {
+//     path: 'typegame',
+//     component: TypeComponent,
+//   },
+// ];
 
 @NgModule({
   declarations: [AppComponent, ChooseComponent, TypeComponent],
@@ -28,7 +27,6 @@ const routes: Routes = [
     BrowserModule,
     FormsModule,
     IonicModule.forRoot(),
-    RouterModule.forChild(routes),
     RouterTestingModule,
   ],
   providers: [MainService],

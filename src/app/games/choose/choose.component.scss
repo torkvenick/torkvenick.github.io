@@ -1,35 +1,36 @@
-.card {
-  width: 90vw;
-  height: 80vh;
-  margin: 0 auto;
-  overflow-y: hidden;
-}
-
 .flx-col-between {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.img-container {
-  height: 65% !important;
+ion-card {
+  height: 90vh;
   margin: 0 auto;
-  object-fit: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.img {
+ion-slides {
   height: 100%;
 }
 
-.h200 {
-  height: 200px;
+ion-card-content {
+  max-height: 30%;
+  padding: 0 10px;
 }
 
-.p5 {
-  padding: 5px;
+ion-img {
+  height: 100%;
+  overflow: hidden;
 }
 
-.prl5 {
-  padding-left: 5px;
-  padding-right: 5px;
+ion-button {
+  width: 100%;
+  margin: 7px 0;
+}
+
+.img-container {
+  height: 70%;
 }

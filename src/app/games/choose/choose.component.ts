@@ -1,5 +1,5 @@
 import { MainService } from './../../shared/services/main.service';
-import { Breed, Breeds } from './../../shared/services/breeds';
+import { Breed } from './../../shared/services/breeds';
 import { Component, ViewChild } from '@angular/core';
 
 @Component({
