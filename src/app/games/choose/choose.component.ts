@@ -33,6 +33,7 @@ export class ChooseComponent {
     }
 
     setTimeout(() => {
+      event.target.style.backgroundColor = 'transparent';
       this.buttonStyleToggle(false);
       this.breeds.splice(this.breeds.indexOf(chosenBreed as Breed), 1);
       this.breed = this.mainService.randomizer(this.breeds);
