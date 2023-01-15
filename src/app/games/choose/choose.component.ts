@@ -1,6 +1,8 @@
 import { MainService } from './../../shared/services/main.service';
-import { Breed } from './../../shared/services/breeds';
+import { Breed, Breeds } from './../../shared/services/breeds';
 import { Component, ViewChild } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
+import { IonSlides } from '@ionic/angular';
 
 @Component({
   selector: 'app-choose',
@@ -10,18 +12,22 @@ import { Component, ViewChild } from '@angular/core';
 export class ChooseComponent {
   @ViewChild('buttons', { static: true }) buttons: any;
   breeds = this.mainService.breeds;
-  breed: Breed;
-  // getDogImg() {
-  //   return this.breed.imgs[1];
-  // }
-
+  breed: Breed = this.mainService.randomizer(this.breeds);
+  @ViewChild('slides', { static: false }) slides?: IonSlides;
   slideOpts = {
     initialSlide: 0,
     speed: 400,
   };
 
+  refreshBreed = new BehaviorSubject(false);
+  refreshBreed$ = this.refreshBreed.asObservable();
+
   constructor(private mainService: MainService) {
-    this.breed = this.mainService.randomizer(this.breeds);
+    this.refreshBreed$.subscribe((res) => {
+      this.breed = this.mainService.randomizer(this.breeds);
+      this.slides?.slideTo(0);
+      this.breeds.length === 1 ? (this.breeds = Breeds.slice()) : null;
+    });
   }
 
   chooseDog(dog: string, event: any & { target: HTMLElement }) {
@@ -36,7 +42,7 @@ export class ChooseComponent {
       event.target.style.backgroundColor = 'transparent';
       this.buttonStyleToggle(false);
       this.breeds.splice(this.breeds.indexOf(chosenBreed as Breed), 1);
-      this.breed = this.mainService.randomizer(this.breeds);
+      this.refreshBreed.next(true);
     }, 2000);
   }
 

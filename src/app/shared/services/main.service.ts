@@ -1,7 +1,7 @@
-import { Breeds } from "./breeds";
+import { Breeds } from './breeds';
 
 export class MainService {
-  breeds = Breeds;
+  readonly breeds = Breeds.slice();
   breedNames: string[] = this.breeds.map((breed) => breed.dog);
   constructor() {
     this.configureDogsArray();
