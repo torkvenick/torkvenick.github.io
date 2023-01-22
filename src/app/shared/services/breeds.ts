@@ -121,6 +121,9 @@ export enum DogName {
   schapendoes = 'schapendoes',
   alaskaMalamute = 'alaska malamute',
   norfolkterrier = 'norfolk Terrier',
+  hollandseHerder = 'hollandse herder',
+  airdaleTerrier = 'airdale terrier',
+  engelseSpringerSpaniel = 'engelse springer spaniel',
 }
 
 export const Breeds: Breed[] = [
@@ -1045,56 +1048,28 @@ export const Breeds: Breed[] = [
     ],
   },
   {
-    dog: DogName.havanezer,
-    imgs: ['', '', ''],
+    dog: DogName.hollandseHerder,
+    imgs: [
+      'https://s3.eu-central-1.amazonaws.com/tipaw-pictures/b7b8e611-d304-4f21-9d71-c0057be898c2.jpg',
+      'https://www.hondencentrum.com/images/og-thumbnail/Hollandseherderkorthaar.jpg',
+      'https://www.houdenvanhonden.nl/globalassets/rassen/fci-1/hh-korthaar/ela-lula-van-stavast2.jpg',
+    ],
   },
   {
-    dog: DogName.havanezer,
-    imgs: ['', '', ''],
+    dog: DogName.airdaleTerrier,
+    imgs: [
+      'https://www.purina.nl/sites/default/files/styles/ttt_image_510/public/2021-02/BREED%20Hero%20Mobile_0187_airedale_terrier.jpg?itok=CIJBMOic',
+      'https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/30202205/Airedale-Terrier-standing-stacked-outdoors.jpg',
+      'https://www.houdenvanhonden.nl/globalassets/rassen/fci-3/airedale-terrier/airedale-terrier1.jpg',
+    ],
   },
   {
-    dog: DogName.havanezer,
-    imgs: ['', '', ''],
-  },
-  {
-    dog: DogName.havanezer,
-    imgs: ['', '', ''],
-  },
-  {
-    dog: DogName.havanezer,
-    imgs: ['', '', ''],
-  },
-  {
-    dog: DogName.havanezer,
-    imgs: ['', '', ''],
-  },
-  {
-    dog: DogName.havanezer,
-    imgs: ['', '', ''],
-  },
-  {
-    dog: DogName.havanezer,
-    imgs: ['', '', ''],
-  },
-  {
-    dog: DogName.havanezer,
-    imgs: ['', '', ''],
-  },
-  {
-    dog: DogName.havanezer,
-    imgs: ['', '', ''],
-  },
-  {
-    dog: DogName.havanezer,
-    imgs: ['', '', ''],
-  },
-  {
-    dog: DogName.havanezer,
-    imgs: ['', '', ''],
-  },
-  {
-    dog: DogName.havanezer,
-    imgs: ['', '', ''],
+    dog: DogName.engelseSpringerSpaniel,
+    imgs: [
+      'https://www.purina.nl/sites/default/files/styles/ttt_image_510/public/2021-02/BREED%20Hero%20Mobile_0019_spaniel_english_springer.jpg?itok=xluOwM8v',
+      'https://s3.eu-central-1.amazonaws.com/tipaw-pictures/0866bfb0-12bb-4093-96c5-b4aebb357821.jpg',
+      'https://www.esscn.nl/images/images/website/stand-foto-show.jpg',
+    ],
   },
   {
     dog: DogName.havanezer,
