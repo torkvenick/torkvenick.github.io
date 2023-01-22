@@ -82,6 +82,45 @@ export enum DogName {
   pekingees = 'pekingees',
   parsonRussellTerrier = 'parson russell terrier',
   bouvierDesFlandres = 'bouvier des flandres',
+  americanIndianDog = 'american indian dog',
+  clumberSpaniel = 'clumber spaniel',
+  whiteSwissShepherdDog = 'white swiss shepherd dog',
+  steirischeRauhhaarBracke = 'steirische rauhhaar bracke',
+  grandBassetGriffonVendéen = 'grand basset griffon vendéen',
+  silkyTerrier = 'silky terrier',
+  finseLappenhond = 'finse lappenhond',
+  groenendaeler = 'groenendaeler',
+  bassetFauveDeBretagne = 'basset fauve de bretagne',
+  perroDeAguaEspañol = 'perro de agua español',
+  markiesje = 'markiesje',
+  australianShepherd = 'australian shepherd',
+  zuidRussischeOwcharka = 'zuid russische owcharka',
+  tibetaanseSpaniel = 'tibetaanse spaniel',
+  havanezer = 'havanezer',
+  australianTerrier = 'australian terrier',
+  duitseWachtelhond = 'duitse wachtelhond',
+  bernerSennenhond = 'berner sennenhond',
+  otterhound = 'otterhound',
+  gordenSetter = 'gorden setter',
+  picardischeHerder = 'picardische herder',
+  bichonPoilFrise = 'bichon poil frise',
+  sussexSpaniel = 'sussex spaniel',
+  engelseToyTerriër = 'engelse toy terriër',
+  griffonBleuDeGascogne = 'griffon bleu de gascogne',
+  samojeed = 'samojeed',
+  dwergPoedel = 'dwerg poedel',
+  pomeranian = 'pomeranian',
+  fieldSpaniel = 'field spaniel',
+  duitseHerder = 'duitse herder',
+  shihTzu = 'shih-tzu',
+  kuvasz = 'kuvasz',
+  mopshond = 'mopshond',
+  barbet = 'barbet',
+  skyeTerrier = 'skye terrier',
+  affenPinscher = 'affen pinscher',
+  schapendoes = 'schapendoes',
+  alaskaMalamute = 'alaska malamute',
+  norfolkterrier = 'norfolk Terrier',
 }
 
 export const Breeds: Breed[] = [
@@ -692,5 +731,373 @@ export const Breeds: Breed[] = [
       'https://www.k9rl.com/wp-content/uploads/2016/01/Bouvier-des-Flandres-800x510.jpg',
       'https://www.thekennelclub.org.uk/media/1761/bouvier-des-flandres-standing.jpg?mode=pad&width=1000&rnd=132143872490000000',
     ],
+  },
+  {
+    dog: DogName.americanIndianDog,
+    imgs: [
+      'https://animalcorner.org/wp-content/uploads/2020/05/Native-American-Indian-Dog-2.jpg',
+      'https://www.dogbreedinfo.com/images25/NativeAmericanIndianDogPurebredFang2YearsOld1.jpg',
+      'https://www.101dogbreeds.com/wp-content/uploads/2018/11/Native-American-Indian-Dog-Images.jpg',
+    ],
+  },
+  {
+    dog: DogName.clumberSpaniel,
+    imgs: [
+      'https://www.akc.org/wp-content/uploads/2017/11/Clumber-Spaniel-On-White-011.jpg',
+      'https://www.thesprucepets.com/thmb/hzsfE_0MgtLgnW-wOCKX7Poawsc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/ClumberSpanielProfile-8c3c7dccea054abaadc9be5ab94bb572.jpg',
+      'http://cdn.akc.org/content/hero/clumber_hero.jpg',
+    ],
+  },
+  {
+    dog: DogName.whiteSwissShepherdDog,
+    imgs: [
+      'https://www.purina.co.uk/sites/default/files/styles/square_medium_440x440/public/2022-08/GettyImages-1316796073.jpg?h=73b765de&itok=n9IciP79',
+      'https://www.dog-breeds-expert.com/wp-content/uploads/2022/09/WhiteSwissShepherd9-1024x682.jpg',
+      'https://bangomagz.com/wp-content/uploads/2022/09/WSSH.jpg',
+    ],
+  },
+  {
+    dog: DogName.steirischeRauhhaarBracke,
+    imgs: [
+      'https://www.hundeo.com/wp-content/uploads/2019/01/Steirische-Rauhhaarbracke-Profilbild.jpg',
+      'https://www.hundund.de/hunderassen/steirischerauhhaarigehochgebirgsbracke/fotos/bracko.jpg',
+      'https://www.vdh.de/welpen/uploads/zrfancy/966_767.jpg',
+    ],
+  },
+  {
+    dog: DogName.grandBassetGriffonVendéen,
+    imgs: [
+      'https://www.purina.nl/sites/default/files/2021-02/BREED%20Hero_0007_basset_griffon_vendeen_grande_0.jpg',
+      'https://www.dogsnsw.org.au/media/img/BrowseAllBreed/Grand-Basset-Griffon-Vendeen.jpg',
+      'https://www.akc.org/wp-content/uploads/2018/01/Grand-Basset-Griffon-Vendeen-on-White-01.jpg',
+    ],
+  },
+  {
+    dog: DogName.silkyTerrier,
+    imgs: [
+      'https://www.purina.nl/sites/default/files/styles/ttt_image_510/public/2021-01/Australian%20Silky%20Terrier1.jpg?itok=8lgxZgqA',
+      'https://www.purina.nl/sites/default/files/styles/ttt_image_510/public/2021-02/BREED%20Hero%20Mobile_0182_australian_silky_terrier.jpg?itok=cl91bCGP',
+      'https://petsnurturing.com/wp-content/uploads/2021/10/silky-terrier.jpg',
+    ],
+  },
+  {
+    dog: DogName.finseLappenhond,
+    imgs: [
+      'https://www.purina.nl/sites/default/files/2021-02/BREED%20Hero%20Finnish%20Lapphund%20%281%29.jpg',
+      'https://www.houdenvanhonden.nl/globalassets/rassen/fci-5/finse-lappenhond/fil-ou-0001.jpg',
+      'https://static.wixstatic.com/media/dcd2c1_2bc71679ecd44579be0b8922b16ac2d6~mv2_d_3888_2592_s_4_2.jpg/v1/fill/w_2500,h_1666,al_c/dcd2c1_2bc71679ecd44579be0b8922b16ac2d6~mv2_d_3888_2592_s_4_2.jpg',
+    ],
+  },
+  {
+    dog: DogName.groenendaeler,
+    imgs: [
+      'https://www.purina.nl/sites/default/files/styles/ttt_image_510/public/2021-02/BREED%20Hero%20Mobile%20Belgian%20Shepherd%20Dog%20Groenendael.jpg?itok=4PB0amQL',
+      'https://www.beestig.be/sites/default/files/styles/article_header/public/artikel/teaser_achtergrond/groenendaeler_op_grasveld.jpg?itok=iASttu_I',
+      'https://www.houdenvanhonden.nl/globalassets/rassen/fci-1/belgische-herdershond-groenendaeler/bgd-ou-0020.jpg',
+    ],
+  },
+  {
+    dog: DogName.bassetFauveDeBretagne,
+    imgs: [
+      'https://www.purina.nl/sites/default/files/styles/ttt_image_510/public/2021-02/BREED%20Hero%20Mobile_0178_basset_fauve_de_bretagne.jpg?itok=s5dNSbWp',
+      'https://www.thekennelclub.org.uk/media/2082/basset-fauve-de-bretagne-standing.jpg?mode=pad&width=1000&rnd=132140453280000000',
+      'https://hondenwereld.nl/wp-content/uploads/2020/10/Basset-Fauve-de-Bretagne-scaled.jpeg',
+    ],
+  },
+  {
+    dog: DogName.perroDeAguaEspañol,
+    imgs: [
+      'https://upload.wikimedia.org/wikipedia/commons/9/9f/Perro_agua.jpg',
+      'https://www.terranea.es/assets/images/razas/perro_de_agua_espanol.jpg',
+      'https://www.purina.es/sites/default/files/styles/ttt_image_510/public/2021-02/BREED%20Hero%20Mobile_0014_spanish_water_dog.jpg?itok=ejjy5jT7',
+    ],
+  },
+  {
+    dog: DogName.markiesje,
+    imgs: [
+      'https://egcn.nl/images/markiesje/1/markiesje.jpg',
+      'https://i0.wp.com/www.cynophilia.nl/wp-content/uploads/2021/03/Markiesje-nu.jpg?resize=782%2C587&ssl=1',
+      'https://egcn.nl/images/markiesje/1/markiesje.jpg',
+    ],
+  },
+  {
+    dog: DogName.australianShepherd,
+    imgs: [
+      'https://www.purina.nl/sites/default/files/styles/ttt_image_510/public/2021-01/Australian%20Shepherd%20Dog1.jpg?itok=F3xHE2Nk',
+      'https://www.hundeo.com/wp-content/uploads/2019/02/Australian-Shepherd-Profil.jpg',
+      'https://centralparkpuppies.com/wp-content/uploads/2021/09/australian-shepherd-dog.jpg',
+    ],
+  },
+  {
+    dog: DogName.zuidRussischeOwcharka,
+    imgs: [
+      'https://www.houdenvanhonden.nl/globalassets/rassen/fci-1/zuid-russische-ovcharka1/zuid-russische-ovcharka',
+      'https://cdn.shortpixel.ai/spai/w_1003+q_lossy+ex_1+ret_img+to_webp/https://hond.nl/wp-content/uploads/2022/08/Zuid-Russische-Owcharka-buiten.jpeg',
+      'https://www.bhv-themax.be/wp-content/uploads/2014/05/8a-667x500.jpg',
+    ],
+  },
+  {
+    dog: DogName.tibetaanseSpaniel,
+    imgs: [
+      'https://www.purina.nl/sites/default/files/2021-02/BREED%20Hero_0133_tibetan_spaniel.jpg',
+      'https://www.houdenvanhonden.nl/globalassets/rassen/fci-9/tibetaanse-spaniel/tibetaanse-spaniel-multi-kampioen-d.t.-just-living-my-life.jpg',
+      'https://www.hondenrassen.nl/public/img/content/tibetaanse_spaniel.jpg',
+    ],
+  },
+  {
+    dog: DogName.havanezer,
+    imgs: [
+      'https://www.purina.nl/sites/default/files/styles/ttt_image_510/public/2021-01/Havanese1.jpg?itok=EZ3u2-ch',
+      'https://www.purina.nl/sites/default/files/styles/ttt_image_510/public/2021-02/BREED%20Hero%20Mobile_0099_havanese.jpg?itok=XYwuqRKc',
+      'https://www.purina.nl/sites/default/files/styles/ttt_image_510/public/2021-01/Havanese1.jpg?itok=EZ3u2-ch',
+    ],
+  },
+  {
+    dog: DogName.australianTerrier,
+    imgs: [
+      'https://www.purina.nl/sites/default/files/styles/ttt_image_510/public/2021-01/Australian%20Terrier1.jpg?itok=0YtPPsSP',
+      'https://www.purina.nl/sites/default/files/2021-02/BREED%20Hero%20Australian%20Terrier_0.jpg',
+      'https://m8r6w9i6.rocketcdn.me/wp-content/uploads/2022/04/Australian-Terrier-Dog-Breed.jpeg',
+    ],
+  },
+  {
+    dog: DogName.duitseWachtelhond,
+    imgs: [
+      'https://www.houdenvanhonden.nl/globalassets/rassen/fci-8/duitse-wachtelhond/duitse-wachtelhond',
+      'http://www.bhv-themax.be/wp-content/uploads/2014/05/87-667x500.jpg',
+      'https://i0.wp.com/www.cynophilia.nl/wp-content/uploads/2021/06/Duitse-Wachtelhond-nu-boven.jpg?resize=530%2C370&ssl=1',
+    ],
+  },
+  {
+    dog: DogName.bernerSennenhond,
+    imgs: [
+      'https://bernersennen.nl/templates/yootheme/cache/Dante2014-fc1e2ffa.jpeg',
+      'https://www.onzehond.nl/wp-content/uploads/2019/09/BernerSennenhond4.jpg',
+      'https://hond.nl/wp-content/uploads/2021/05/Berner-Sennen-in-het-bos.jpg',
+    ],
+  },
+  {
+    dog: DogName.otterhound,
+    imgs: [
+      'https://www.akc.org/wp-content/uploads/2017/11/Otterhound-On-White-03.jpg',
+      'https://www.purina.nl/sites/default/files/styles/ttt_image_510/public/2021-02/BREED%20Hero%20Mobile_0057_otterhound.jpg?itok=aS5hWVS5',
+      'https://www.dogtime.com/assets/uploads/2011/01/file_23034_otterhound-460x290.jpg',
+    ],
+  },
+  {
+    dog: DogName.gordenSetter,
+    imgs: [
+      'https://www.purina.nl/sites/default/files/2021-02/BREED%20Hero_0060_gordon_setter_0.jpg',
+      'https://www.shutterstock.com/image-photo/gordon-setter-hunting-dog-standing-600w-561898600.jpg',
+      'https://www.hondenrassen.nl/public/img/content/gordon_setter.jpg',
+    ],
+  },
+  {
+    dog: DogName.picardischeHerder,
+    imgs: [
+      'https://www.houdenvanhonden.nl/globalassets/rassen/fci-1/picardische-herdershond/img_4448.jpg',
+      'http://www.vandebovendijksehoeve.nl/media/1037/indy.jpg',
+      'https://i.pinimg.com/736x/53/40/9b/53409be886ddf83f55733784da388f12--kids.jpg',
+    ],
+  },
+  {
+    dog: DogName.bichonPoilFrise,
+    imgs: [
+      'https://gelukkigehonden.nl/wp-content/uploads/bichon-frise.jpg',
+      'https://www.zooplus.nl/magazine/wp-content/uploads/2018/04/fotolia_14003950.jpg',
+      'https://cdn.britannica.com/54/236454-050-B406A11E/Bichon-frise-dog.jpg',
+    ],
+  },
+  {
+    dog: DogName.sussexSpaniel,
+    imgs: [
+      'https://www.purina.nl/sites/default/files/2021-02/sussex_spaniel.jpg',
+      'https://www.dogtime.com/assets/uploads/2011/01/file_22994_sussex-spaniel-460x290.jpg',
+      'https://www.akc.org/wp-content/uploads/2017/11/Sussex-Spaniel-On-White-01.jpg',
+    ],
+  },
+  {
+    dog: DogName.engelseToyTerriër,
+    imgs: [
+      'https://www.purina.nl/sites/default/files/breed_library/english_toy_terrier_black_%26_tan.jpg',
+      'https://www.purina.nl/sites/default/files/styles/ttt_image_510/public/2021-01/English%20Toy%20Terrier%20%28Black%20%26%20Tan%291.jpg?itok=QnouHj7p',
+      'https://st2.depositphotos.com/1146155/5722/i/950/depositphotos_57220583-stock-photo-black-english-toy-terrier.jpg',
+    ],
+  },
+  {
+    dog: DogName.griffonBleuDeGascogne,
+    imgs: [
+      'https://www.hundeo.com/wp-content/uploads/2019/10/Griffon-Bleu-De-Gascogne-Profilbild.jpg',
+      'https://home.hccnet.nl/pl.de.haas/images/loulou5.jpg',
+      'https://c8.alamy.com/compfr/pfg2e6/petit-griffon-bleu-de-gascogne-chien-vue-de-cote-jusqu-a-pfg2e6.jpg',
+    ],
+  },
+  {
+    dog: DogName.samojeed,
+    imgs: [
+      'https://www.purina.nl/sites/default/files/2021-02/BREED%20Hero_0110_samoyed.jpg',
+      'https://www.puppygroep.nl/wp-content/uploads/2020/06/somajeed-in-het-bos.jpg',
+      'https://www.purina.nl/sites/default/files/styles/ttt_image_510/public/2021-01/Samoyed1.jpg?itok=qFaFC9l-',
+    ],
+  },
+  {
+    dog: DogName.dwergPoedel,
+    imgs: [
+      'https://www.purina.nl/sites/default/files/styles/ttt_image_510/public/2021-02/BREED%20Hero%20Mobile_0048_poodle_miniature.jpg?itok=Tw30ekxG',
+      'https://www.omlet.nl/images/cache/512/341/Dog-Miniature_Poodle-A_Miniature_Poodle_with_an_beautiful%2C_well_groomed_coat.jpg',
+      'https://www.dierennieuws.nl/wp-content/uploads/2019/06/poedel.jpg',
+    ],
+  },
+  {
+    dog: DogName.pomeranian,
+    imgs: [
+      'https://www.purina.co.nz/sites/default/files/styles/ttt_image_510/public/2021-02/BREED%20Hero%20Mobile_0051_pomeranian.jpg?itok=B0aNzA3u',
+      'https://www.allthingsdogs.com/wp-content/uploads/2020/01/White-Pomeranian-Feature.jpg',
+      'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2021%2F03%2F12%2Fpomeranian-beach-1190837479-2000.jpg',
+    ],
+  },
+  {
+    dog: DogName.fieldSpaniel,
+    imgs: [
+      'https://www.purina.nl/sites/default/files/2021-02/BREED%20Hero_0127_spaniel_field.jpg',
+      'https://www.omlet.nl/images/cache/1024/682/Field-Spaniel-Outside.jpg',
+      'https://www.hondenrassenwijzer.nl/wp-content/uploads/2019/09/fieldspaniel.jpg',
+    ],
+  },
+  {
+    dog: DogName.duitseHerder,
+    imgs: [
+      'https://www.beeztees.nl/wp-content/uploads/2014/10/Herder-shutterstock_164440220.jpg',
+      'https://fastly.jwwb.nl/public/z/o/z/temp-jytaruuzxbytvzqbmqlk/0qtxgs/gsd-ou-0068-1.jpg',
+      'https://www.beestig.be/sites/default/files/styles/article_header/public/artikel/teaser_achtergrond/duitse_herder.jpg?itok=TSMSOvHI',
+    ],
+  },
+  {
+    dog: DogName.shihTzu,
+    imgs: [
+      'https://www.purina.nl/sites/default/files/styles/ttt_image_510/public/2020-12/Shih%20Tzu2.jpg?itok=hv3bDAtB',
+      'https://www.akc.org/wp-content/uploads/2017/11/Shih-Tzu-On-White-01.jpg',
+      'https://www.purina.nl/sites/default/files/2021-02/BREED%20Hero_0117_shih_tzu.jpg',
+    ],
+  },
+  {
+    dog: DogName.kuvasz,
+    imgs: [
+      'https://www.purina.nl/sites/default/files/styles/ttt_image_510/public/2021-02/BREED%20Hero%20Mobile_0097_hungarian_kuvasz.jpg?itok=_FAj9XYG',
+      'https://www.hondenrassen.nl/public/img/content/kuvasz.jpg',
+      'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2021%2F09%2F30%2Fkuvasz-lying-down-on-mountain-384431190-2000.jpg',
+    ],
+  },
+  {
+    dog: DogName.mopshond,
+    imgs: [
+      'https://hond.nl/wp-content/uploads/2021/05/Mopshond-buiten-staand.jpg',
+      'https://media.os.fressnapf.com/cms/2020/04/Ratgeber-Rassenportrait-Mops_1200x527.jpg?t=seoimg_703',
+      'https://www.houdenvanhonden.nl/globalassets/rassen/fci-9/mopshond/pug-ou-0041.jpg',
+    ],
+  },
+  {
+    dog: DogName.barbet,
+    imgs: [
+      'https://www.thekennelclub.org.uk/media/2709/barbet-headshot.jpg?mode=pad&width=1000&rnd=132140370090000000',
+      'https://www.hondenrassenwijzer.nl/wp-content/uploads/2019/08/barbet-800x532.jpg',
+      'https://www.akc.org/wp-content/uploads/2017/11/Barbet-standing-in-the-snow.jpg',
+    ],
+  },
+  {
+    dog: DogName.skyeTerrier,
+    imgs: [
+      'https://www.purina.nl/sites/default/files/2021-02/BREED%20Hero_0119_skye_terrier.jpg',
+      'https://www.hundeo.com/wp-content/uploads/2019/01/Skye-Terrier-Profil.jpg',
+      'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2021%2F11%2F18%2Fskye-terrier-standing-on-gravel-1500600518-2000.jpg',
+    ],
+  },
+  {
+    dog: DogName.affenPinscher,
+    imgs: [
+      'https://www.purina.nl/sites/default/files/styles/ttt_image_510/public/2021-02/BREED%20Hero%20Mobile_0189_affenpinscher_0.jpg?itok=V7xe3SUe',
+      'https://www.dogtime.com/assets/uploads/2011/01/file_23096_affenpinscher-460x290.jpg',
+      'https://www.omlet.co.uk/images/cache/512/495/Dog-Affenpinscher-A_cute_little_affenpinscher_with_a_lovely_scruffy_coat.jpg',
+    ],
+  },
+  {
+    dog: DogName.schapendoes,
+    imgs: [
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Schapendoes.jpg/1200px-Schapendoes.jpg',
+      'https://www.hondenrassen.nl/public/img/content/schapendoes.jpg',
+      'https://www.zeeuwsestrange.nl/wp-content/uploads/2019/05/51109446_2659830084027954_6199786734885011456_o.jpg',
+    ],
+  },
+  {
+    dog: DogName.alaskaMalamute,
+    imgs: [
+      'https://www.purina.nl/sites/default/files/styles/ttt_image_510/public/2021-02/BREED%20Hero%20Mobile_0186_alaskan_malamute.jpg?itok=lJL27qRM',
+      'https://s3.eu-central-1.amazonaws.com/tipaw-pictures/d7a69dec-4069-42cd-9dc0-cb28f9d45715.jpg',
+      'https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/09151144/Alaskan-Malamute-standing-in-the-grass1.jpg',
+    ],
+  },
+  {
+    dog: DogName.norfolkterrier,
+    imgs: [
+      'https://www.houdenvanhonden.nl/globalassets/rassen/fci-3/norfolk-terrier/nft-ou-0043.jpg',
+      'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2021%2F05%2F13%2Fnorfolk-terrier-running-tongue-grass-1931762279-2000.jpg',
+      'https://media.istockphoto.com/id/587527480/photo/typical-norfolk-terrier-in-the-garden.jpg?s=612x612&w=0&k=20&c=RQkYk-FONrginWVEceKrjfkdhDEAUD3MRQsvJN2EjMg=',
+    ],
+  },
+  {
+    dog: DogName.havanezer,
+    imgs: ['', '', ''],
+  },
+  {
+    dog: DogName.havanezer,
+    imgs: ['', '', ''],
+  },
+  {
+    dog: DogName.havanezer,
+    imgs: ['', '', ''],
+  },
+  {
+    dog: DogName.havanezer,
+    imgs: ['', '', ''],
+  },
+  {
+    dog: DogName.havanezer,
+    imgs: ['', '', ''],
+  },
+  {
+    dog: DogName.havanezer,
+    imgs: ['', '', ''],
+  },
+  {
+    dog: DogName.havanezer,
+    imgs: ['', '', ''],
+  },
+  {
+    dog: DogName.havanezer,
+    imgs: ['', '', ''],
+  },
+  {
+    dog: DogName.havanezer,
+    imgs: ['', '', ''],
+  },
+  {
+    dog: DogName.havanezer,
+    imgs: ['', '', ''],
+  },
+  {
+    dog: DogName.havanezer,
+    imgs: ['', '', ''],
+  },
+  {
+    dog: DogName.havanezer,
+    imgs: ['', '', ''],
+  },
+  {
+    dog: DogName.havanezer,
+    imgs: ['', '', ''],
+  },
+  {
+    dog: DogName.havanezer,
+    imgs: ['', '', ''],
   },
 ];

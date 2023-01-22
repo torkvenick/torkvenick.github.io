@@ -11,9 +11,9 @@ import { IonSlides } from '@ionic/angular';
 })
 export class ChooseComponent {
   @ViewChild('buttons', { static: true }) buttons: any;
+  @ViewChild('slides', { static: false }) slides?: IonSlides;
   breeds = this.mainService.breeds;
   breed: Breed = this.mainService.randomizer(this.breeds);
-  @ViewChild('slides', { static: false }) slides?: IonSlides;
   slideOpts = {
     initialSlide: 0,
     speed: 400,
